@@ -1,16 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, 
 body {
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
-.blog-post {
-    display: flex;
+
+main {
+    display: grid;
+}
+
+.hero {
+    background: url("../images/home-office.jpg") no-repeat center;
+    background-size: cover;
+    /* height: 300px; */
+    width: 100%;
+    color: white;
 }
 
 .hero-img {
     width: 100%;
 }
-
 .blog-post__image {
     width: 100%;
 }
