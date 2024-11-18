@@ -11,8 +11,66 @@ body {
     padding: 0;
 }
 
-main {
+body {
     display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas: 
+        ".... .... ...." 
+        ".... head ...."
+        ".... main ...."
+        ".... foot ...."
+        ".... .... ....";
+    gap: 1em 0;
+}
+
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "blog1"
+        "blog2"
+        "blog3"
+        "blog4"
+        "blog5"
+        "blog6";
+}
+
+footer {
+    grid-area: foot;
+}
+
+.blog-post__one {
+    grid-area: blog1;
+}
+
+.blog-post__two {
+    grid-area: blog2;
+}
+
+.blog-post__three {
+    grid-area: blog3;
+}
+
+.blog-post__four {
+    grid-area: blog4;
+}
+
+.blog-post__five {
+    grid-area: blog5;
+}
+
+.blog-post__six {
+    grid-area: blog6;
 }
 
 .hero {
