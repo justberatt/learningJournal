@@ -130,7 +130,6 @@ footer> * {
 
 .hero-heading > a {
     color: white;
-    text-decoration: none;
 }
 
 .blog-post {
@@ -220,5 +219,9 @@ footer> * {
     body {
         max-width: 1024px;
         margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 80%;
     }
 }
