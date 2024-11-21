@@ -93,7 +93,12 @@ section > p,
     flex-direction: column;
 }
 
-.about-me__text > section > * {
+.about-me__text h3 {
+    font-size: 1em;
+    /* margin: 0; */
+}
+
+.about-me__text p {
     margin-top: 0;
 }
 
