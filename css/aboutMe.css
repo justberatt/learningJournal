@@ -77,12 +77,20 @@ footer> * {
 
 .about-me__heading {
     margin: 0;
+    padding: .8em 0 0;
     font-size: 2em;
     line-height: 1.2;
 }
 
-.about-me__fragment {
-    margin-top: 8px;
+.about-me__fragment,
+section > p,
+.about-me__text {
+    font-weight: bold;
+}
+
+.about-me__text {
+    display: flex;
+    flex-direction: column;
 }
 
 .about-me__text > section > * {
@@ -90,7 +98,7 @@ footer> * {
 }
 
 .about-me__text {
-    padding: 1.5em 0;
+    padding: 1.5em 0 0;
 }
 
 .recent-posts {
@@ -136,7 +144,8 @@ footer> * {
 
 }
 
-.recent-posts__link {
+.recent-posts__text {
+    margin-top: 0;
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
