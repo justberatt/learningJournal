@@ -160,14 +160,24 @@ section > p,
     text-decoration: underline;
 }
 
-@media (min-width: 1024px) {
-    body {
-        max-width: 1024px;
-        margin: 0 auto;
+@media (min-width: 768px) {
+    .about-me__text > p {
+        font-weight: 400;
+    }
+
+    .about-me__text > h3 {
+        font-size: 1.25em;
     }
 
     .container {
         padding: 3em 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
     }
 
     .about-me {
@@ -194,10 +204,6 @@ section > p,
     .about-me__text {
         grid-column: 2 / 12;
         font-weight: 400;
-    }
-
-    .about-me__text h3{
-        font-size: 1.25em;
     }
 
     .blog-post__one {
