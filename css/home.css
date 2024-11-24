@@ -127,6 +127,7 @@ footer> * {
 .hero-heading {
     margin: 0;
     font-size: 2em;
+    text-decoration: underline;
 }
 
 .hero-heading > a {
